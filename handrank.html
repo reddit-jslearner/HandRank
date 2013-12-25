@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hand Rank</title>
+  <script type="text/javascript" src="handrank.js"></script>
+  <style type="text/css">
+    body {
+      text-align: center;
+    }
+
+    #hands {
+      font-size: 400%;
+    }
+
+    .hand {
+      display: inline;
+    }
+
+    .hand:hover {
+      color: gray;
+      cursor: pointer;
+    }
+
+    #results {
+      font-size: 200%;
+    }
+
+    .result {
+      display: inline;
+    }
+  </style>
+</head>
+<body>
+  <div style="font-size: 200%;">which hand is better:</div>
+
+  <div id="hands">
+    <div id="hand1" class="hand"></div> or
+    <div id="hand2" class="hand"></div>?
+  </div>
+
+  <div id="results">
+    right: <div id="right" class="result"></div><br />
+    wrong: <div id="wrong" class="result"></div>
+  </div>
+
+</body>
+</html>
