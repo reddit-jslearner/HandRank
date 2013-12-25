@@ -30,12 +30,12 @@
 
   function update(dom) {
     // select two random hands
-    var i = parseInt(Math.random() * hands.length);
+    var i = parseInt(Math.random() * 100) % hands.length;
 
     // make sure `j` doesn't equal `i`
     var j;
     do {
-      j = parseInt(Math.random() * hands.length);
+      j = parseInt(Math.random() * 100) % hands.length;
     } while (j == i);
 
     dom.hand1.onclick = function () {
